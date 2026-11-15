@@ -102,3 +102,5 @@ h3 { margin: 0; font-size: 1.1rem; }
   .hero { padding: 64px 0 56px; }
   .timeline li { grid-template-columns: 1fr; gap: 4px; }
 }
+.pres { margin: 4px 0 8px; font-size: .95rem; }
+.pres span { display: block; font-size: .75rem; color: var(--muted); text-transform: uppercase; letter-spacing: .08em; }
