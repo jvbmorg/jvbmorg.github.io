@@ -84,6 +84,10 @@ h3 { margin: 0; font-size: 1.1rem; }
 .timeline p { margin: 4px 0 0; color: var(--muted); }
 .timeline .links a { font-weight: 500; }
 
+.email { font-size: 1.2rem; font-weight: 600; }
+.email a { text-decoration: none; }
+.email a:hover { text-decoration: underline; }
+
 .site-footer { padding: 28px 0; border-top: 1px solid var(--line); color: var(--muted); font-size: .9rem; }
 .site-footer p { margin: 0; }
 
