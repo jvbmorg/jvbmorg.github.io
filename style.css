@@ -114,3 +114,13 @@ h3 { margin: 0; font-size: 1.1rem; }
   #societies { break-inside: avoid; }
   h2, .past-title { break-after: avoid; }
 }
+
+.logo-panel {
+  height: 120px; margin: -8px -8px 8px; padding: 18px 22px;
+  display: flex; align-items: center; justify-content: center;
+  border-radius: 8px;
+}
+.logo-panel.dark { background: #5b6475; }
+.logo-panel.light { background: #ffffff; border: 1px solid var(--line); }
+.logo-panel img { max-width: 100%; max-height: 84px; object-fit: contain; }
+.logo-panel.wide img { width: 100%; max-height: none; }
