@@ -46,6 +46,7 @@ a { color: var(--red); }
 .nav nav a:hover { color: var(--red); }
 
 .hero {
+  position: relative; overflow: hidden;
   padding: 96px 0 88px;
   background: linear-gradient(135deg, #7a141b 0%, #b3262e 55%, #d4553c 100%);
   color: #fff;
@@ -132,3 +133,12 @@ h3 { margin: 0; font-size: 1.1rem; }
 h3.sub { margin: 28px 0 8px; font-size: 1.15rem; }
 .committee { padding-left: 20px; margin: 8px 0 0; }
 .committee li { margin: 4px 0; }
+
+.hero-art {
+  position: absolute; top: 0; right: 0; height: 100%; width: min(62%, 720px);
+  pointer-events: none;
+}
+.hero .wrap { position: relative; z-index: 1; }
+@media (max-width: 600px) {
+  .hero-art { width: 100%; opacity: .55; }
+}
