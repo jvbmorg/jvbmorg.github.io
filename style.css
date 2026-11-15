@@ -128,3 +128,6 @@ h3 { margin: 0; font-size: 1.1rem; }
 .timeline li.note .year { color: var(--muted); }
 .timeline li.note h3 { color: var(--muted); font-weight: 600; }
 .timeline .when-sm { font-weight: 600; color: var(--ink); }
+h3.sub { margin: 28px 0 8px; font-size: 1.15rem; }
+.committee { padding-left: 20px; margin: 8px 0 0; }
+.committee li { margin: 4px 0; }
