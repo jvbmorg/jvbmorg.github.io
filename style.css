@@ -104,3 +104,13 @@ h3 { margin: 0; font-size: 1.1rem; }
 }
 .pres { margin: 4px 0 8px; font-size: .95rem; }
 .pres span { display: block; font-size: .75rem; color: var(--muted); text-transform: uppercase; letter-spacing: .08em; }
+
+@media print {
+  * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .site-header { position: static; backdrop-filter: none; }
+  .card, .timeline li, .next { break-inside: avoid; }
+  .card:hover { transform: none; box-shadow: none; }
+  .section { padding: 40px 0; }
+  #societies { break-inside: avoid; }
+  h2, .past-title { break-after: avoid; }
+}
