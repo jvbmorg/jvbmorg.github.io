@@ -127,3 +127,4 @@ h3 { margin: 0; font-size: 1.1rem; }
 
 .timeline li.note .year { color: var(--muted); }
 .timeline li.note h3 { color: var(--muted); font-weight: 600; }
+.timeline .when-sm { font-weight: 600; color: var(--ink); }
