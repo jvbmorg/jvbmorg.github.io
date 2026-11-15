@@ -124,3 +124,6 @@ h3 { margin: 0; font-size: 1.1rem; }
 .logo-panel.light { background: #ffffff; border: 1px solid var(--line); }
 .logo-panel img { max-width: 100%; max-height: 84px; object-fit: contain; }
 .logo-panel.wide img { width: 100%; max-height: none; }
+
+.timeline li.note .year { color: var(--muted); }
+.timeline li.note h3 { color: var(--muted); font-weight: 600; }
