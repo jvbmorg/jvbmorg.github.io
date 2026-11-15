@@ -76,6 +76,10 @@ h3 { margin: 0; font-size: 1.1rem; }
 .next { border-left: 4px solid var(--red); background: var(--bg-alt); padding: 18px 22px; border-radius: 0 10px 10px 0; margin-bottom: 40px; }
 .next .eyebrow { color: var(--red); opacity: 1; }
 .next p:last-child { margin: 4px 0 0; color: var(--muted); }
+.next + .next { margin-top: -24px; }
+.next.future { border-left-color: var(--muted); }
+.next.future .eyebrow { color: var(--muted); }
+.past-title { margin: 0 0 8px; color: var(--muted); font-size: .85rem; text-transform: uppercase; letter-spacing: .12em; }
 .next p.links { margin: 10px 0 0; font-weight: 600; }
 .next .when { margin: 4px 0 0; font-weight: 600; font-size: 1.05rem; }
 
