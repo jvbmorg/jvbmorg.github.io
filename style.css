@@ -134,15 +134,13 @@ h3.sub { margin: 28px 0 8px; font-size: 1.15rem; }
 .committee { padding-left: 20px; margin: 8px 0 0; }
 .committee li { margin: 4px 0; }
 
-.form-embed {
-  margin: 16px 0 8px; background: #ffffff;
-  border: 1px solid var(--line); border-radius: 12px; overflow: hidden;
+.cta { margin: 20px 0 24px; }
+.button {
+  display: inline-block; padding: 12px 24px; border-radius: 8px;
+  background: var(--red); color: #ffffff; font-weight: 600; text-decoration: none;
+  transition: background .15s;
 }
-.form-embed iframe { display: block; width: 100%; height: 1200px; border: 0; }
-.form-alt { font-size: .9rem; color: var(--muted); }
-@media (max-width: 600px) {
-  .form-embed iframe { height: 1100px; }
-}
-@media print {
-  .form-embed { display: none; }
+.button:hover { background: var(--red-dark); }
+@media (prefers-color-scheme: dark) {
+  .button { color: #12151b; }
 }
