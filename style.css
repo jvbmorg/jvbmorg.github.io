@@ -151,3 +151,13 @@ h3.sub { margin: 28px 0 8px; font-size: 1.15rem; }
 @media (prefers-color-scheme: dark) {
   .button { color: #12151b; }
 }
+
+.share { margin: 28px 0 0; }
+.x-share {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 9px 18px; border-radius: 999px;
+  background: #000000; color: #ffffff; font-weight: 600; font-size: .95rem; text-decoration: none;
+  transition: background .15s;
+}
+.x-share:hover { background: #2a2a2a; }
+.x-share:focus-visible { outline: 2px solid #ffffff; outline-offset: 3px; }
