@@ -82,6 +82,13 @@ h3 { margin: 0; font-size: 1.1rem; }
 .past-title { margin: 0 0 8px; color: var(--muted); font-size: .85rem; text-transform: uppercase; letter-spacing: .12em; }
 .next p.links { margin: 10px 0 0; font-weight: 600; }
 .next .when { margin: 4px 0 0; font-weight: 600; font-size: 1.05rem; }
+.facts { display: grid; grid-template-columns: max-content 1fr; gap: 6px 18px; margin: 14px 0 0; font-size: .95rem; }
+.facts dt { color: var(--muted); font-weight: 500; }
+.facts dd { margin: 0; }
+.video { position: relative; aspect-ratio: 16 / 9; margin: 18px 0 0; border-radius: 8px; overflow: hidden; background: #000; }
+.video iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+@media (max-width: 560px) { .facts { grid-template-columns: 1fr; gap: 2px 0; } .facts dd { margin-bottom: 8px; } }
+@media print { .video { display: none; } }
 
 .timeline { list-style: none; padding: 0; margin: 0; }
 .timeline li { display: grid; grid-template-columns: 80px 1fr; gap: 20px; padding: 20px 0; border-top: 1px solid var(--line); }
