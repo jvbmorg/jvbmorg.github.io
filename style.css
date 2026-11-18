@@ -85,7 +85,14 @@ h3 { margin: 0; font-size: 1.1rem; }
 .facts { display: grid; grid-template-columns: max-content 1fr; gap: 6px 18px; margin: 14px 0 0; font-size: .95rem; }
 .facts dt { color: var(--muted); font-weight: 500; }
 .facts dd { margin: 0; }
-.video { position: relative; aspect-ratio: 16 / 9; margin: 18px 0 0; border-radius: 8px; overflow: hidden; background: #000; }
+.facts a.map { font-weight: 600; font-size: .9rem; }
+.video {
+  position: relative; aspect-ratio: 16 / 9; border-radius: 8px; overflow: hidden; background: #000;
+  /* break out of the narrow text column so the video is larger */
+  width: min(1000px, calc(100vw - 40px));
+  margin: 22px 0 4px calc(50% - min(500px, 50vw - 20px));
+  box-shadow: 0 8px 28px rgba(0,0,0,.18);
+}
 .video iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
 @media (max-width: 560px) { .facts { grid-template-columns: 1fr; gap: 2px 0; } .facts dd { margin-bottom: 8px; } }
 @media print { .video { display: none; } }
