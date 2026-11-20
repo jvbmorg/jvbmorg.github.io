@@ -109,6 +109,13 @@ h3 { margin: 0; font-size: 1.1rem; }
   .hero { padding: 64px 0 56px; }
   .timeline li { grid-template-columns: 1fr; gap: 4px; }
 }
+@media (max-width: 380px) {
+  .wrap { padding: 0 14px; }
+  .nav { gap: 12px; }
+  .brand { font-size: 1.05rem; letter-spacing: .02em; }
+  .nav nav { gap: 8px; }
+  .nav nav a { font-size: .8rem; }
+}
 .pres { margin: 4px 0 8px; font-size: .95rem; }
 .pres span { display: block; font-size: .75rem; color: var(--muted); text-transform: uppercase; letter-spacing: .08em; }
 
